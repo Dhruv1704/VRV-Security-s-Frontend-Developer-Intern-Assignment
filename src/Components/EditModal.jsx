@@ -94,7 +94,7 @@ const EditModal = (props) => {
     }
 
     const handleStatus = (e)=>{
-        handleStatus(e.target.value)
+        setStatus(e.target.value)
     }
 
     return (
