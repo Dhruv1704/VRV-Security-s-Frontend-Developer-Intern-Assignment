@@ -18,7 +18,7 @@ function App() {
         {id: "2", name: "VRV", creation_date: "2023-11-24", role: "Admin", permissions: ["Delete","Write"], status: "Active"},
         {id: "3", name: "Rohan", creation_date: "2023-11-22", role: "User", permissions: ["Read","Write"], status: "Active"},
         {id: "4", name: "Rahul", creation_date: "2023-11-21", role: "User", permissions: ["Write"], status: "Active"},
-        {id: "5", name: "Johnlkdsml", creation_date: "2023-11-30", role: "User", permissions: ["Write"], status: "Inactive"},
+        {id: "5", name: "John", creation_date: "2023-11-30", role: "User", permissions: ["Write"], status: "Inactive"},
     ]:localRows;
     const [rows, setRows] = useState(defaultRow);
   return (
