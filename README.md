@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Role-Based Access Control (RBAC)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project implements a Role-Based Access Control (RBAC) system. It allows you to manage users, their roles, and the permissions associated with those roles.
 
-## Available Scripts
+Features
+--------
 
-In the project directory, you can run:
+1.  **User Management**: Add, edit, and view user accounts with the following details:
+    -   User ID
+    -   Name
+    -   Creation Date
+    -   Role (Admin or User)
+    -   Permissions (Read, Write, Delete)
+    -   Status (Active or Inactive)
+2.  **Add User**: Users can be added to the system by providing the required information, such as ID, name, role, permissions, and status. The application performs input validation to ensure that:
+    -   The ID field only accepts numeric values.
+    -   The name field only accepts alphabetic characters and spaces.
+    -   All required fields are filled out.
+3.  **Unique ID Validation**: The application checks for duplicate user IDs when adding a new user or editing an existing one. If a duplicate ID is detected, an error toast notification is displayed, and the user is not allowed to proceed until a unique ID is provided.
+4.  **Edit User**: Existing user information can be edited, including their ID, name, role, permissions, and status. Similar to the add feature, the application ensures that the new ID is unique.
+5.  **Sorting**: Sort the user table by any column in ascending or descending order.
+6.  **Bulk Actions**: Select multiple users and perform actions like deleting them in bulk.
+7.  **Pagination**: The user table is paginated, displaying a configurable number of rows per page. Users can navigate through the pages using the pagination controls.
+8.  **Persistence**: User data is stored in the browser's localStorage, ensuring data persistence across sessions.
+9.  **Notifications**: Success and error notifications are displayed using a toast library.
+10. **Responsive Design**: The application is designed to be responsive and accessible on various devices.
 
-### `npm start`
+Technologies Used
+-----------------
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-   React.js
+-   Material-UI
+-   Tailwind CSS (for styling)
+-   localStorage (for data persistence)
+-   Toastify (for notifications)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Getting Started
+---------------
 
-### `npm test`
+To run the application locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  Clone the repository: ```git clone https://github.com/your-username/vrv-securities.git```
+2. Navigate to the project directory:```cd <repository-name>```
+3. Install the dependencies: ```npm install```
+4. Start the development server: ```npm start```
