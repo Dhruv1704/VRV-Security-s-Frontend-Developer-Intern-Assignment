@@ -99,7 +99,7 @@ const AddModal = (props) => {
             >
                 <Box sx={style}>
                     <form onSubmit={handleAddSubmit}>
-                        <div className={"flex space-x-10"}>
+                        <div className={"flex sm:space-x-10 sm:flex-row flex-col"}>
                             <div>
                                 <div className={"flex flex-col p-2"}>
                                     <label id={"Add ID"}>ID</label>
@@ -107,7 +107,7 @@ const AddModal = (props) => {
                                            placeholder={"Enter ID"}/>
                                 </div>
                                 <div className={"flex flex-col my-4"}>
-                                    <label className={"mb-6"}>Role</label>
+                                    <label className={"sm:mb-6"}>Role</label>
                                     <select className={"rounded-md shadow-md p-2"} onChange={handleRole}>
                                         <option disabled={true}>Select the role</option>
                                         <option value={"Admin"}>Admin</option>
@@ -120,7 +120,7 @@ const AddModal = (props) => {
                                     <label>Name</label>
                                     <input className={"shadow-md rounded-md p-2"} placeholder={"Enter Name"} required={true} pattern={"^([a-zA-Z]|\\s)*$"} onChange={handleName}/>
                                 </div>
-                                <div className={"flex flex-col my-4"}>
+                                <div className={"flex flex-col my-4 sm:space-y-2"}>
                                     <label>Permissions</label>
                                     <MultiSelect values={permissionsOption} permissions={permissions} setPermissions={setPermissions}/>
                                 </div>
